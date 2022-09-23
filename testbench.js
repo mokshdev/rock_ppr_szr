@@ -9,7 +9,8 @@ function getComputerChoice(){
   compu = (choices[choose]);
 }
 getComputerChoice()
-//  console.log(compu)
+let computerChoice = compu;
+ console.log("computer chose:",computerChoice)
 /*
 Write a function that plays a single round of Rock Paper Scissors. The function should take two parameters - the playerSelection and computerSelection - and then return a string that declares the winner of the round like so: "You Lose! Paper beats Rock"
 
@@ -32,11 +33,28 @@ while((userChoice != "rock") && (userChoice != "paper") && (userChoice != "sciss
   user();
 }
 while((userChoice == "rock") || (userChoice == "paper") || (userChoice == "scissors")){
-  console.log(userChoice)
+  console.log("user chose: ",userChoice)
   break
 }
 
 
 function round() {
+    if ((userChoice == "rock" && computerChoice == "scissors")
+    ||
+    (userChoice == "paper" && computerChoice == "rock")
+    ||
+    (userChoice == "scissors" && computerChoice == "paper")) {
+        console.log("You Won! " ,userChoice,"beats",computerChoice)
+    } else if ((computerChoice == "rock" && userChoice == "scissors")
+    ||
+    (computerChoice == "paper" && userChoice == "rock")
+    ||
+    (computerChoice == "scissors" && userChoice == "paper")) {
+        console.log("You Loose! " ,computerChoice,"beats",userChoice)
+    }else{
+        console.log("error......")
+    }
     
 }
+
+round();
