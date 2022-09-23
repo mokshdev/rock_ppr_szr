@@ -35,3 +35,8 @@ while((userChoice == "rock") || (userChoice == "paper") || (userChoice == "sciss
   console.log(userChoice)
   break
 }
+
+
+function round() {
+    
+}
