@@ -93,8 +93,10 @@ function game() {
 
 if (userScore < compScore) {
   console.log("you have lost to a dumb machine")
-} else if(compScore > userScore) {
-  
+} else if(compScore < userScore) {
+  console.log("you have won over a dumb machine")
+}else{
+  console.log("you have tied with a dumb machine")
 }
 }
 
