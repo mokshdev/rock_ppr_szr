@@ -28,7 +28,7 @@ function user(){
 user();
 
 
-
+function looping(){
 while((userChoice != "rock") && (userChoice != "paper") && (userChoice != "scissors") ){
   user();
 }
@@ -36,25 +36,55 @@ while((userChoice == "rock") || (userChoice == "paper") || (userChoice == "sciss
   console.log("user chose: ",userChoice)
   break
 }
+}
 
+looping();
+
+
+let userScore = 0;
+let compScore = 0;
 
 function round() {
+  
     if ((userChoice == "rock" && computerChoice == "scissors")
     ||
     (userChoice == "paper" && computerChoice == "rock")
     ||
     (userChoice == "scissors" && computerChoice == "paper")) {
-        console.log("You Won! " ,userChoice,"beats",computerChoice)
+        console.log("You Won! " ,userChoice,"beats",computerChoice);
+        userScore = ++1; //throwing error
     } else if ((computerChoice == "rock" && userChoice == "scissors")
     ||
     (computerChoice == "paper" && userChoice == "rock")
     ||
     (computerChoice == "scissors" && userChoice == "paper")) {
-        console.log("You Loose! " ,computerChoice,"beats",userChoice)
+        console.log("You Loose! " ,computerChoice,"beats",userChoice);
+        compScore = ++1; // throwing error
     }else{
-        console.log("error......")
+        console.log("its a draw you chose ", userChoice ," and computer chose ", computerChoice);
     }
     
 }
 
+
+
+
+/*
+Write a NEW function called game(). Call the playRound function inside of this one to play a 5 round game that keeps score and reports a winner or loser at the end.
+*/
+
 round();
+console.log("computer score: ",compScore,"user score: ",userScore);
+
+// let result;
+
+// function game() {
+  
+//   for (let result = 1;result < 6;result++) {
+//     round();
+//     console.log("computer score: ",compScore,"user score: ",userScore);
+// }  
+
+// }
+
+// game();
