@@ -1,17 +1,52 @@
-/* body{
-    background-image:url(background.jpg) ;
+*{
+    font-family: 'Roboto', sans-serif;
+    
+}
+body{
+    background-image:url(https://static8.depositphotos.com/1343665/821/i/600/depositphotos_8214705-stock-photo-grunge-industrial-background.jpg) ;
     position: center;
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-} */
-/* .flex-container{
+}
+.heading{
+    text-align: center;
+    background-color: white;
+    margin-left: 400px;
+    margin-right: 400px;
+    color: black;
+    padding: 5px;
+    border-radius: 200px;
+    border: 5px solid grey;
+}
+.flex-container{
     display: flex;
-    
-} */
+    justify-content: center;
+}
 
-.button-rps{
+.blocks{
     height: 240px;
     width: 240px;
     padding: 20px;
+    margin: 0px 20px;
+    border-radius: 200px;
+    border: 20px;
+    border: 10px solid white;
+}
+.flex-container-two{
+    display: flex;
+    justify-content: center;
+}
+
+.user-points,.live-score,.pc-score{
+    margin: 90px 120px;
+    padding: 20px 30px;
+    color: black;
+    font-size: 35px;
+    font-weight: bolder;
+    background-color: antiquewhite;
+    text-align: center;
+    border-radius: 20px;
+    border: 5px solid grey;
     
 }
