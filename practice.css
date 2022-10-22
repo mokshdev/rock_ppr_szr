@@ -1,0 +1,10 @@
+div.image-prac{
+    display: flex;
+}
+.img-edit{
+    height: 120px;
+}
+.text{
+    color: red;
+    font-size: xx-large;
+}

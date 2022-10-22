@@ -1,0 +1,17 @@
+/* body{
+    background-image:url(background.jpg) ;
+    position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+} */
+/* .flex-container{
+    display: flex;
+    
+} */
+
+.button-rps{
+    height: 240px;
+    width: 240px;
+    padding: 20px;
+    
+}
