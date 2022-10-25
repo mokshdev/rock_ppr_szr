@@ -1,17 +1,17 @@
-const rock_button = document.querySelector('#rock-button')
-const paper_button = document.querySelector('#paper-button')
-const scissor_button = document.querySelector('#scissor-button')
+const rock_button = document.querySelector('.rock')
+const paper_button = document.querySelector('.paper')
+const scissor_button = document.querySelector('.scissor')
 
 rock_button.addEventListener('click', () => {
-  alert("Hello World");
+  alert("you chose rock");
   });
 
 
   paper_button.addEventListener('click', () => {
-    alert("Hello World");
+    alert("you chose papper");
   });
 
 
   scissor_button.addEventListener('click', () => {
-    alert("Hello World");
+    alert("you chose scissors");
   });
