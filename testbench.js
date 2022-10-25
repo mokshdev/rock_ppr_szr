@@ -101,3 +101,14 @@ if (userScore < compScore) {
 }
 
 game();
+
+
+
+
+// DOM 
+
+const rock_button = document.querySelector('.rock')
+const paper_button = document.querySelector('.paper')
+const scissor_button = document.querySelector('.scissor')
+
+rock_button.onclick = () => alert("hellow world");
