@@ -23,7 +23,11 @@ body{
     display: flex;
     justify-content: center;
 }
-
+.mid-text{
+    text-align: center;
+    font-size: 20px;
+    color: aliceblue;
+}
 .blocks{
     height: 240px;
     width: 240px;
